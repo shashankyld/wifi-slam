@@ -79,7 +79,7 @@ TODO: Add lidar, camera, imu, wifi, and bag record node - all in one launch file
 
 
 ### ERRORS AND NEED FIXES
-1. Need sudo to install ceres dependency
+1. Need sudo to install ceres dependency on CUDA11 desktop
 ```bash
 CMake Error at /home/roblab/Documents/clins_ws/src/clins/CMakeLists.txt:50 (find_package):
   By not providing "FindCeres.cmake" in CMAKE_MODULE_PATH this project has
