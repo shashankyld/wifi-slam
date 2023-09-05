@@ -3,7 +3,7 @@
 WiFi Augmented Loop Closure
 
 ## TO-Do
-1. Create node to pubish
+1. [DONE] Create node to pubish
    ```
    iwlist scan
    ```
@@ -17,7 +17,7 @@ https://github.com/JanQuenzel/clins
 ```shell
 https://github.com/xqms/rosbag_fancy
 ```
-7. Move the wifi package to the lidar_ws
+7. [DONE] Move the wifi package to the lidar_ws
 ```shell
 # Current location inside tiago
 ~/Documents/wificlosure/wifi_ws/src
