@@ -40,6 +40,18 @@ To ssh from cuda11 with connection through Wifi!
 ssh nimbro_home@10.7.3.130
 ```
 
+#### SIMPIFY SSH AND SOURCING ROS 
+1. To enter ssh from CUDA11
+```bash
+bash nimbrossh.sh
+```
+2. To source ROS workspace
+```bash
+source wifislam.sh
+```
+
+
+
 ### Important launch files
 To launch the fisheye camera
 ```shell
@@ -64,3 +76,41 @@ TODO: Add lidar, camera, imu, wifi, and bag record node - all in one launch file
 
 #### SOME IDEAS
 1. Channel State Information (CSI) from Wi-Fi signals to predict Angle of Arrival (AoA) 
+
+
+### ERRORS AND NEED FIXES
+1. Need sudo to install ceres dependency
+```bash
+CMake Error at /home/roblab/Documents/clins_ws/src/clins/CMakeLists.txt:50 (find_package):
+  By not providing "FindCeres.cmake" in CMAKE_MODULE_PATH this project has
+  asked CMake to find a package configuration file provided by "Ceres", but
+  CMake did not find one.
+
+  Could not find a package configuration file provided by "Ceres" with any of
+  the following names:
+
+    CeresConfig.cmake
+    ceres-config.cmake
+
+  Add the installation prefix of "Ceres" to CMAKE_PREFIX_PATH or set
+  "Ceres_DIR" to a directory containing one of the above files.  If "Ceres"
+  provides a separate development package or SDK, be sure it has been
+  installed.
+
+
+cd /home/roblab/Documents/clins_ws/build/clins; catkin build --get-env clins | catkin env -si  /usr/bin/cmake /home/roblab/Documents/clins_ws/src/clins --no-warn-unused-cli -DCATKIN_DEVEL_PREFIX=/home/roblab/Documents/clins_ws/devel/.private/clins -DCMAKE_INSTALL_PREFIX=/home/roblab/Documents/clins_ws/install; cd -
+
+.............................................................................................................................................................................................................................................................................................................................
+Failed     << clins:cmake                          [ Exited with code 1 ]                                                                                                                                                                                                                                                    
+Failed    <<< clins                                [ 1.8 seconds ]                                                                                                                                                                                                                                                           
+[build] Summary: 1 of 2 packages succeeded.                                                                                                                                                                                                                                                                                  
+[build]   Ignored:   None.                                                                                                                                                                                                                                                                                                   
+[build]   Warnings:  None.                                                                                                                                                                                                                                                                                                   
+[build]   Abandoned: None.                                                                                                                                                                                                                                                                                                   
+[build]   Failed:    1 packages failed.                                                                                                                                                                                                                                                                                      
+[build] Runtime: 2.7 seconds total.                                                                                                                                                                                                                                                                                          
+[build] Note: Workspace packages have changed, please re-source setup files to use them.
+roblab@cuda11:~/Documents/clins_ws/src$ sudo apt-get install libceres-dev
+[sudo] password for roblab: 
+roblab is not in the sudoers file.  This incident will be reported.
+```
