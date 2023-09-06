@@ -30,7 +30,10 @@ arguments=['0.15', '0.00', '-0.07',  '-0.92', '0.00', '-0.38', '-0.00', 'torso_l
 parameters=[],
 output='screen' 
 ```
-9. [DONE] Record Data of Lidar, Camera, IMU, Wifi 
+9. [DONE] Record Data of Lidar, Camera, IMU, Wifi
+10. Understand CLINS supported datatype - timestamp for every point in the point cloud
+11. Create CLINS supported data from recorded bag or create a node that publishes clin supported format
+12. Run CLINS on downloaded and recorded data
 
 ## Usage
 
