@@ -13,7 +13,7 @@ WiFi Augmented Loop Closure
 ```shell
 https://github.com/JanQuenzel/clins
 ```
-6. Use fancy-bag library
+6. Use fancy-bag library [added by Jan]
 ```shell
 https://github.com/xqms/rosbag_fancy
 ```
