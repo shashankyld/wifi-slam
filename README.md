@@ -7,13 +7,13 @@ WiFi Augmented Loop Closure
    ```
    iwlist scan
    ```
-2. Find out other information about wifi received data like AOA, phase, ...
-3. Improve node with extra info
-4. Install clins(Lidar-Inertial SLAM) on Cuda11 as it is computationally heavy and works better offline
+2. [Not Possible on the hardware] Find out other information about wifi received data like AOA, phase, ...
+3. [Not neccessary] Improve node with extra info
+4. [DONE] Install clins(Lidar-Inertial SLAM) on Cuda11 as it is computationally heavy and works better offline
 ```shell
 https://github.com/JanQuenzel/clins
 ```
-6. Use fancy-bag library [added by Jan]
+6. [DONE] Use fancy-bag library [added by Jan]
 ```shell
 https://github.com/xqms/rosbag_fancy
 ```
@@ -30,6 +30,7 @@ arguments=['0.15', '0.00', '-0.07',  '-0.92', '0.00', '-0.38', '-0.00', 'torso_l
 parameters=[],
 output='screen' 
 ```
+9. [DONE] Record Data of Lidar, Camera, IMU, Wifi 
 
 ## Usage
 
@@ -49,11 +50,11 @@ ssh nimbro_home@10.7.3.130
 ```
 
 #### SIMPIFY SSH AND SOURCING ROS 
-1. To enter ssh from CUDA11
+1. To enter nimbro_home ssh from CUDA11
 ```bash
 bash nimbrossh.sh
 ```
-2. To source ROS workspace
+2. To source ROS workspace in nimbro_home
 ```bash
 source wifislam.sh
 ```
@@ -67,10 +68,18 @@ roslaunch camera_v4l2 brio.launch
 ```
 To launch the ouster lidar parallel to fisheye camera 
 ```shell
-roslaunch ouster_ros driver.launch 
-TODO: Add lidar, camera, imu, wifi, and bag record node - all in one launch file
+roslaunch ouster_ros driver.launch
 ```
+To launch lidar, camera, imu, wifi - all in one launch file
+```shell
+cd ~/lidar_ws/scripts && roslaunch run_sensors.launch 
+```
+To start rosbag_fancy recorder
+```bash
+# YET TO DO
+cd ~/lidar_ws/src/rosbag_fancy/rosbag_fancy/sensor_data && rosbag_fancy record -o <name>.bag /ouster/points /ouster/imu /brio/image_raw/compressed /brio/camera_info /tf /tf_static /wifi_data
 
+```
 
 
 #### SOME FACTS REGARDING WIFI
@@ -86,39 +95,17 @@ TODO: Add lidar, camera, imu, wifi, and bag record node - all in one launch file
 1. Channel State Information (CSI) from Wi-Fi signals to predict Angle of Arrival (AoA) 
 
 
-### ERRORS AND NEED FIXES
+### ALL ABOUT CLINS
+#### Installing clins - ROS
 1. Need sudo to install ceres dependency on CUDA11 desktop
 ```bash
-CMake Error at /home/roblab/Documents/clins_ws/src/clins/CMakeLists.txt:50 (find_package):
-  By not providing "FindCeres.cmake" in CMAKE_MODULE_PATH this project has
-  asked CMake to find a package configuration file provided by "Ceres", but
-  CMake did not find one.
-
-  Could not find a package configuration file provided by "Ceres" with any of
-  the following names:
-
-    CeresConfig.cmake
-    ceres-config.cmake
-
-  Add the installation prefix of "Ceres" to CMAKE_PREFIX_PATH or set
-  "Ceres_DIR" to a directory containing one of the above files.  If "Ceres"
-  provides a separate development package or SDK, be sure it has been
-  installed.
-
-
-cd /home/roblab/Documents/clins_ws/build/clins; catkin build --get-env clins | catkin env -si  /usr/bin/cmake /home/roblab/Documents/clins_ws/src/clins --no-warn-unused-cli -DCATKIN_DEVEL_PREFIX=/home/roblab/Documents/clins_ws/devel/.private/clins -DCMAKE_INSTALL_PREFIX=/home/roblab/Documents/clins_ws/install; cd -
-
-.............................................................................................................................................................................................................................................................................................................................
-Failed     << clins:cmake                          [ Exited with code 1 ]                                                                                                                                                                                                                                                    
-Failed    <<< clins                                [ 1.8 seconds ]                                                                                                                                                                                                                                                           
-[build] Summary: 1 of 2 packages succeeded.                                                                                                                                                                                                                                                                                  
-[build]   Ignored:   None.                                                                                                                                                                                                                                                                                                   
-[build]   Warnings:  None.                                                                                                                                                                                                                                                                                                   
-[build]   Abandoned: None.                                                                                                                                                                                                                                                                                                   
-[build]   Failed:    1 packages failed.                                                                                                                                                                                                                                                                                      
-[build] Runtime: 2.7 seconds total.                                                                                                                                                                                                                                                                                          
-[build] Note: Workspace packages have changed, please re-source setup files to use them.
-roblab@cuda11:~/Documents/clins_ws/src$ sudo apt-get install libceres-dev
-[sudo] password for roblab: 
-roblab is not in the sudoers file.  This incident will be reported.
+#Installed ceres seperately
 ```
+2. Sophus is a dependency - this is cloned in subdirectory of the clins package
+```bash
+https://github.com/strasdat/Sophus.git
+```
+3. clins package is places inside the clins_ws in CUDA11
+4. Build clins workspace
+
+   
