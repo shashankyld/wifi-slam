@@ -121,4 +121,7 @@ https://github.com/strasdat/Sophus.git
 3. clins package is places inside the clins_ws in CUDA11
 4. Build clins workspace
 
+#### Fixing nimbro or a new lidar/imu system errors for CLINS
+1. Change "ring" from int8 to int16
+2. Change transformation between imu an lidar
    
