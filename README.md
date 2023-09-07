@@ -83,7 +83,12 @@ To start rosbag_fancy recorder
 cd ~/lidar_ws/src/rosbag_fancy/rosbag_fancy/sensor_data && rosbag_fancy record -o <name>.bag /ouster/points /ouster/imu /brio/image_raw/compressed /brio/camera_info /tf /tf_static /wifi_data
 
 ```
-
+#### To copy files between machines
+1. "." is "~" or home for rsync
+2. --progress shows the progress
+```bash
+rsync -ravh --progress nimbro_home@10.7.3.130:./lidar_ws/src/rosbag_fancy/rosbag_fancy/sensor_data/bag1.bag ./Documents/nimbro_data
+```
 
 #### SOME FACTS REGARDING WIFI
 1. A Single router can have mutipe NICs
