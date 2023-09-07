@@ -31,9 +31,10 @@ parameters=[],
 output='screen' 
 ```
 9. [DONE] Record Data of Lidar, Camera, IMU, Wifi
-10. Understand CLINS supported datatype - timestamp for every point in the point cloud
-11. Create CLINS supported data from recorded bag or create a node that publishes clin supported format
-12. Run CLINS on downloaded and recorded data
+10. [DONE] Understand CLINS supported datatype - timestamp for every point in the point cloud
+11. [NOT REQUIRED - ouster already has timestamps] Create CLINS supported data from recorded bag or create a node that publishes clin supported format
+12. [DONE] Run CLINS on downloaded data
+13. RUN CLINS on recorded data - current issue is "ring" field is not present in all the points of a scan
 
 ## Usage
 
