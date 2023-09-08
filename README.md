@@ -100,8 +100,12 @@ cd ~/lidar_ws/src/rosbag_fancy/rosbag_fancy/sensor_data && rosbag_fancy record -
 1. "." is "~" or home for rsync
 2. --progress shows the progress
 ```bash
+# Nimbro_home to Cuda11
 rsync -ravh --progress nimbro_home@10.7.3.130:./lidar_ws/src/rosbag_fancy/rosbag_fancy/sensor_data/bag1.bag ./Documents/nimbro_data
+# For opposite data flow (Cuda11 to Nimbro_home)
+rsync -ravh --progress /home/roblab/Documents/nimbro_data/URDF nimbro_home@10.7.3.130:./lidar_ws/src/nimbro_urdf
 ```
+
 
 #### SOME FACTS REGARDING WIFI
 1. A Single router can have mutipe NICs
