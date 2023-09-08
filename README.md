@@ -46,6 +46,8 @@ https://robotics.stackexchange.com/questions/89543/failed-to-find-match-for-fiel
 20. [DONE] Install Open3D on the Cuda11
 21. [DONE] Run kiss-icp on the empty_lab.bag - drifiting behaviour observed for dataset with jerky motion
 22. Get Nimbro URDF to visuaize as well as to have transforms between sensor and the robot
+23. Look for fish-eye monocular slam systems
+24. check out ORBSLAM-3 docker from the lab
 
 
 ## Usage
