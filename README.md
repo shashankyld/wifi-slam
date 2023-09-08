@@ -35,7 +35,9 @@ output='screen'
 11. [NOT REQUIRED - ouster already has timestamps] Create CLINS supported data from recorded bag or create a node that publishes clin supported format
 12. [DONE] Run CLINS on downloaded data
 13. [JAN FIXED IT] RUN CLINS on recorded data - current issue is "ring" field is not present in all the points of a scan
-14. https://robotics.stackexchange.com/questions/89543/failed-to-find-match-for-field-intensity-with-ouster-lidar
+```bash
+https://robotics.stackexchange.com/questions/89543/failed-to-find-match-for-field-intensity-with-ouster-lidar
+```
 15. Write a launch file for recording data
 16. Write a launch file to view Rviz
 17. [DONE] Run CLINS on empty_lab.bag
