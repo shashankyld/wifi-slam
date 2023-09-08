@@ -22,7 +22,7 @@ https://github.com/xqms/rosbag_fancy
 # Current location inside tiago
 ~/Documents/wificlosure/wifi_ws/src
 ```
-8. Apply static transform for the lidar with respect to body!
+8. [DONE] Apply static transform for the lidar with respect to body!
 ```bash
 package='tf2_ros',
 executable='static_transform_publisher',
