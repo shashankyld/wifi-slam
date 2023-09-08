@@ -45,7 +45,7 @@ https://robotics.stackexchange.com/questions/89543/failed-to-find-match-for-fiel
 19. Understand why iwlist gives 0 networks sometimes
 20. [DONE] Install Open3D on the Cuda11
 21. Run kiss-icp on the empty_lab.bag
-22. TEST
+22. Get Nimbro URDF to visuaize as well as to have transforms between sensor and the robot
 
 
 ## Usage
