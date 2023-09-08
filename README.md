@@ -102,7 +102,7 @@ rsync -ravh --progress nimbro_home@10.7.3.130:./lidar_ws/src/rosbag_fancy/rosbag
 #### SOME FACTS REGARDING WIFI
 1. A Single router can have mutipe NICs
 2. A singe NIC can have ony a singe SSID and channel
-3. Two different NICs from a single router can have same SSID and channel\
+3. Two different NICs from a single router can have same SSID and channel
 
 #### Workspaces used 
 1. lidar_ws contains ouster, camera, and wifi packages - located in the ~ directory of tiago.
