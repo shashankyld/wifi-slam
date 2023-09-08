@@ -122,7 +122,7 @@ rsync -ravh --progress nimbro_home@10.7.3.130:./lidar_ws/src/rosbag_fancy/rosbag
 ```bash
 https://github.com/strasdat/Sophus.git
 ```
-3. clins package is places inside the clins_ws in CUDA11
+3. clins package is placed inside the clins_ws in CUDA11
 4. Build clins workspace
 
 #### Fixing nimbro or a new lidar/imu system errors for CLINS
