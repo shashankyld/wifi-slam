@@ -39,7 +39,7 @@ output='screen'
 https://robotics.stackexchange.com/questions/89543/failed-to-find-match-for-field-intensity-with-ouster-lidar
 ```
 15. [DONE] Write a launch file for recording data
-16. Write a launch file to view Rviz
+16. [DONE] Write a launch file to view Rviz
 17. [DONE] Run CLINS on empty_lab.bag
 18. Write some code to understand wifi networks strength based on position
 19. Understand why iwlist gives 0 networks sometimes
