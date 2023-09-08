@@ -34,10 +34,14 @@ output='screen'
 10. [DONE] Understand CLINS supported datatype - timestamp for every point in the point cloud
 11. [NOT REQUIRED - ouster already has timestamps] Create CLINS supported data from recorded bag or create a node that publishes clin supported format
 12. [DONE] Run CLINS on downloaded data
-13. RUN CLINS on recorded data - current issue is "ring" field is not present in all the points of a scan
+13. [JAN FIXED IT] RUN CLINS on recorded data - current issue is "ring" field is not present in all the points of a scan
 14. https://robotics.stackexchange.com/questions/89543/failed-to-find-match-for-field-intensity-with-ouster-lidar
 15. Write a launch file for recording data
 16. Write a launch file to view Rviz
+17. Run CLINS on empty_lab.bag
+18. Write some code to understand wifi networks strength based on position
+19. Understand why iwlist gives 0 networks sometimes
+20. 
 
 
 ## Usage
