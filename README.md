@@ -42,11 +42,11 @@ https://robotics.stackexchange.com/questions/89543/failed-to-find-match-for-fiel
 16. [DONE] Write a launch file to view Rviz
 17. [DONE] Run CLINS on empty_lab.bag
 18. Write some code to understand wifi networks strength based on position
-19. Understand why iwlist gives 0 networks sometimes
+19. [DONE] Understand why iwlist gives 0 networks sometimes - [Not completely sure, but using sudo solves the issue but is slower]
 20. [DONE] Install Open3D on the Cuda11
 21. [DONE] Run kiss-icp on the empty_lab.bag - drifiting behaviour observed for dataset with jerky motion
 22. Get Nimbro URDF to visuaize as well as to have transforms between sensor and the robot
-23. Look for fish-eye monocular slam systems
+23. Look for fish-eye monocular slam systems - [OrbSLAM3 paper says that they provide fish-eye camera support]
 24. check out ORBSLAM-3 docker from the lab
 25. inverse-wifi model
 ```bash
@@ -64,6 +64,17 @@ FSPL (dB) = 20log10(d)+ 20log10(f) + 32.44
 d = 10** [( dB-32.44 - 20log10(f) ) / 20]
 https://stackoverflow.com/questions/11217674/how-to-calculate-distance-from-wifi-router-using-signal-strength
 ```
+26. Install OrbSLAM3 dependencies
+```bash
+# Pangolin
+# C++11 or C++0x Compiler
+# Eigen3
+# OpenCV
+# DBoW2 and g2o (Included in Thirdparty folder)
+```
+27. Explore OrbSLAM3 Docker 
+
+
 
 ## Usage
 
