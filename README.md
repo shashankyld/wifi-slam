@@ -50,6 +50,7 @@ https://robotics.stackexchange.com/questions/89543/failed-to-find-match-for-fiel
 24. check out ORBSLAM-3 docker from the lab
 25. inverse-wifi model
 ```bash
+# Need to verify before using this
 FSPL (dB) = 20log10(d) + 20log10(f) + K
 
 d = distance
@@ -61,6 +62,7 @@ FSPL (dB) = 20log10(d)+ 20log10(f) + 32.44
 ```
 ```bash
 d = 10** [( dB-32.44 - 20log10(f) ) / 20]
+https://stackoverflow.com/questions/11217674/how-to-calculate-distance-from-wifi-router-using-signal-strength
 ```
 
 ## Usage
