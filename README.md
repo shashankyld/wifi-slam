@@ -107,7 +107,10 @@ rsync -ravh --progress nimbro_home@10.7.3.130:./lidar_ws/src/rosbag_fancy/rosbag
 # For opposite data flow (Cuda11 to Nimbro_home)
 rsync -ravh --progress /home/roblab/Documents/nimbro_data/URDF nimbro_home@10.7.3.130:./lidar_ws/src/nimbro_urdf
 ```
-
+#### To open chrome in the nimbro
+```bash
+~/chrome/opt/google/chrome/chrome
+```
 
 #### SOME FACTS REGARDING WIFI
 1. A Single router can have mutipe NICs
