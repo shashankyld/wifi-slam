@@ -113,7 +113,10 @@ rsync -ravh --progress /home/roblab/Documents/nimbro_data/URDF nimbro_home@10.7.
 1. A Single router can have mutipe NICs
 2. A singe NIC can have ony a singe SSID and channel
 3. Two different NICs from a single router can have same SSID and channel
-
+4. Wifi port:
+```bash
+wlx00c0cab04510
+```
 #### Workspaces used 
 1. lidar_ws contains ouster, camera, and wifi packages - located in the ~ directory of tiago.
 2. imu is on the ouster lidar and so ouster package pubishes imu data as well.
