@@ -48,7 +48,20 @@ https://robotics.stackexchange.com/questions/89543/failed-to-find-match-for-fiel
 22. Get Nimbro URDF to visuaize as well as to have transforms between sensor and the robot
 23. Look for fish-eye monocular slam systems
 24. check out ORBSLAM-3 docker from the lab
+25. inverse-wifi model
+```bash
+FSPL (dB) = 20log10(d) + 20log10(f) + K
 
+d = distance
+f = frequency
+K= constant that depends on the units used for d and f
+If d is measured in kilometers, f in MHz, the formula is:
+
+FSPL (dB) = 20log10(d)+ 20log10(f) + 32.44
+```
+```bash
+d = 10** [( dB-32.44 - 20log10(f) ) / 20]
+```
 
 ## Usage
 
