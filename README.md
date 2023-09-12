@@ -141,6 +141,9 @@ rsync -ravh --progress nimbro_home@10.7.3.130:./lidar_ws/src/rosbag_fancy/rosbag
 # Cuda11 to Nimbro_home (from Nimbro_home terminal)
 rsync -ravh --progress /home/roblab/Documents/nimbro_data/URDF nimbro_home@10.7.3.130:./lidar_ws/src/nimbro_urdf
 ```
+
+#### Echoing topic on another machine
+When we transfer bag file, from nimbro robot to cuda11 pc, and we run bag file in cuda11 pc, we cannot echo ```/wifi_data``` topic, since we defined our own message type on nimbro pc, and that message type is not build on cuda11, so it cannot be echoed.
 #### To open chrome in the nimbro
 ```bash
 ~/chrome/opt/google/chrome/chrome
