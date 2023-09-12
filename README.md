@@ -136,9 +136,9 @@ cd ~/lidar_ws/src/rosbag_fancy/rosbag_fancy/sensor_data && rosbag_fancy record -
 1. "." is "~" or home for rsync
 2. --progress shows the progress
 ```bash
-# Nimbro_home to Cuda11
+# Nimbro_home to Cuda11 (from Cuda11 terminal)
 rsync -ravh --progress nimbro_home@10.7.3.130:./lidar_ws/src/rosbag_fancy/rosbag_fancy/sensor_data/bag1.bag ./Documents/nimbro_data
-# For opposite data flow (Cuda11 to Nimbro_home)
+# Cuda11 to Nimbro_home (from Nimbro_home terminal)
 rsync -ravh --progress /home/roblab/Documents/nimbro_data/URDF nimbro_home@10.7.3.130:./lidar_ws/src/nimbro_urdf
 ```
 #### To open chrome in the nimbro
