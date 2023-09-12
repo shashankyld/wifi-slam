@@ -76,7 +76,10 @@ https://stackoverflow.com/questions/11217674/how-to-calculate-distance-from-wifi
 ```bash
 https://github.com/shashankyld/orbslam3_ROS
 ```
-
+28. Install eduroam-cs connection
+```bash
+https://www.hrz.uni-bonn.de/en/all-services/internet-network-access/wifi-eduroam-reinstallation
+```
 
 
 ## Usage
