@@ -83,7 +83,10 @@ https://www.hrz.uni-bonn.de/en/all-services/internet-network-access/wifi-eduroam
 29. Fix time for wifi topic
 30. Visuaize colour coded path based on the wifi reception
 31. Trianguate wifi based on different assumptions of signal propagation
-
+32. Read Frank Dellaert's report on factor graphs for clarity and revision
+```bash
+https://www.annualreviews.org/doi/pdf/10.1146/annurev-control-061520-010504
+```
 ## Usage
 
 ### SSH Access
