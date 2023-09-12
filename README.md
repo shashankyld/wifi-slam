@@ -181,4 +181,7 @@ https://github.com/strasdat/Sophus.git
 #### Fixing nimbro or a new lidar/imu system errors for CLINS
 1. Change "ring" from int8 to int16
 2. Change transformation between imu an lidar
+
+#### PROBLEMS
+1. rospy returns same timestamps for all fingerprints. I do not know why? We have to correct that, when we find out why
    
