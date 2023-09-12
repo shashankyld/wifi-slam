@@ -178,6 +178,13 @@ https://github.com/strasdat/Sophus.git
 3. clins package is placed inside the clins_ws in CUDA11
 4. Build clins workspace
 
+#### CLINS Output
+Here is the data with the ROS Timestamps
+```~/.ros/clins_after_map_poses.txt```
+
+Here is the data with relative Timestamps:
+```/home/roblab/Documents/nimbro_data/bag_file_name/```
+
 #### Fixing nimbro or a new lidar/imu system errors for CLINS
 1. Change "ring" from int8 to int16
 2. Change transformation between imu an lidar
