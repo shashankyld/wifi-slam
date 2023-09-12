@@ -80,7 +80,9 @@ https://github.com/shashankyld/orbslam3_ROS
 ```bash
 https://www.hrz.uni-bonn.de/en/all-services/internet-network-access/wifi-eduroam-reinstallation
 ```
-
+29. Fix time for wifi topic
+30. Visuaize colour coded path based on the wifi reception
+31. Trianguate wifi based on different assumptions of signal propagation
 
 ## Usage
 
