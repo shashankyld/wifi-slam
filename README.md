@@ -136,8 +136,9 @@ cd ~/lidar_ws/src/rosbag_fancy/rosbag_fancy/sensor_data && rosbag_fancy record -
 
 ```
 #### To copy files between machines
-1. "." is "~" or home for rsync
-2. --progress shows the progress
+1. "." is "~" or home for rsync (for PC from which we are transfering file)
+2. "." is current directory (for PC to which we are transfering file)
+3. --progress shows the progress
 ```bash
 # Nimbro_home to Cuda11 (from Cuda11 terminal)
 rsync -ravh --progress nimbro_home@10.7.3.130:./lidar_ws/src/rosbag_fancy/rosbag_fancy/sensor_data/bag1.bag ./Documents/nimbro_data
