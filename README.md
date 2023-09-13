@@ -76,17 +76,18 @@ https://stackoverflow.com/questions/11217674/how-to-calculate-distance-from-wifi
 ```bash
 https://github.com/shashankyld/orbslam3_ROS
 ```
-28. Install eduroam-cs connection
+28. [DONE] Install eduroam-cs connection
 ```bash
 https://www.hrz.uni-bonn.de/en/all-services/internet-network-access/wifi-eduroam-reinstallation
 ```
-29. Fix time for wifi topic
+29. [DONE] Fix time for wifi topic
 30. Visuaize colour coded path based on the wifi reception
 31. Trianguate wifi based on different assumptions of signal propagation
 32. Read Frank Dellaert's report on factor graphs for clarity and revision
 ```bash
 https://www.annualreviews.org/doi/pdf/10.1146/annurev-control-061520-010504
 ```
+33. Try to think of a better way to initialize wifi based edge than track method proposed in the paper
 ## Usage
 
 ### SSH Access
