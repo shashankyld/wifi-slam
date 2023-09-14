@@ -88,6 +88,10 @@ https://www.hrz.uni-bonn.de/en/all-services/internet-network-access/wifi-eduroam
 https://www.annualreviews.org/doi/pdf/10.1146/annurev-control-061520-010504
 ```
 33. Try to think of a better way to initialize wifi based edge than track method proposed in the paper
+34. alternatives to iwlist
+```bash
+nmcli device wifi list
+```
 ## Usage
 
 ### SSH Access
