@@ -178,7 +178,7 @@ for Wi-Fi network monitoring and packet capturing. It can continuously scan and 
 Wi-Fi networks, including signal strength, encryption, and connected devices, at a high frequency.
 
 On the other hand, iwlist is a simpler command-line utility for scanning Wi-Fi networks and provides a
-static snapshot of available networks at the time of the scan. It doesn't continuously update the information
+static snapshot of available networks at the time of the scan. It doesnt continuously update the information
 in real-time, and you would need to run it multiple times to see changes in network status as the environment changes.
 
 If you need to monitor Wi-Fi networks in real-time, especially for applications like robotics or tracking
