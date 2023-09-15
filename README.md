@@ -191,6 +191,7 @@ In summary, if you require real-time network scanning and updates, airodump-ng i
 2. airodump-ng (online continous updates - test)
 3. pywifi (python - not updating -tested)
 4. nmcli (updates but very very slow - 1/10 hz)
+```
 #### Workspaces used 
 1. lidar_ws contains ouster, camera, and wifi packages - located in the ~ directory of tiago.
 2. imu is on the ouster lidar and so ouster package pubishes imu data as well.
