@@ -92,6 +92,10 @@ https://www.annualreviews.org/doi/pdf/10.1146/annurev-control-061520-010504
 ```bash
 nmcli device wifi list
 ```
+35. Write ROS Node for
+```bash
+sudo airodump-ng wlx00c0cab04510 | grep iPhone
+```
 ## Usage
 
 ### SSH Access
