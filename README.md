@@ -166,6 +166,10 @@ When we transfer bag file, from nimbro robot to cuda11 pc, and we run bag file i
 ```bash
 wlx00c0cab04510
 ```
+```bash
+# Try this
+nmcli device wifi list ifname wlx00c0cab04510
+```
 #### Workspaces used 
 1. lidar_ws contains ouster, camera, and wifi packages - located in the ~ directory of tiago.
 2. imu is on the ouster lidar and so ouster package pubishes imu data as well.
