@@ -172,11 +172,19 @@ nmcli device wifi list ifname wlx00c0cab04510
 ```
 ```bash
 # Aternatives to iwlist
-Between iwlist and airodump-ng, airodump-ng is generally faster for scanning and providing real-time updates about nearby Wi-Fi networks and their associated devices. airodump-ng is a powerful tool specifically designed for Wi-Fi network monitoring and packet capturing. It can continuously scan and update the information about Wi-Fi networks, including signal strength, encryption, and connected devices, at a high frequency.
+Between iwlist and airodump-ng, airodump-ng is generally faster for scanning and providing real-time updates
+about nearby Wi-Fi networks and their associated devices. airodump-ng is a powerful tool specifically designed
+for Wi-Fi network monitoring and packet capturing. It can continuously scan and update the information about
+Wi-Fi networks, including signal strength, encryption, and connected devices, at a high frequency.
 
-On the other hand, iwlist is a simpler command-line utility for scanning Wi-Fi networks and provides a static snapshot of available networks at the time of the scan. It doesn't continuously update the information in real-time, and you would need to run it multiple times to see changes in network status as the environment changes.
+On the other hand, iwlist is a simpler command-line utility for scanning Wi-Fi networks and provides a
+static snapshot of available networks at the time of the scan. It doesn't continuously update the information
+in real-time, and you would need to run it multiple times to see changes in network status as the environment changes.
 
-If you need to monitor Wi-Fi networks in real-time, especially for applications like robotics or tracking signal changes as a device moves, airodump-ng or similar Wi-Fi monitoring tools are more suitable due to their ability to provide continuous updates. However, keep in mind that airodump-ng is typically used for monitoring and security assessment, so it may require additional configuration and permissions to run.
+If you need to monitor Wi-Fi networks in real-time, especially for applications like robotics or tracking
+signal changes as a device moves, airodump-ng or similar Wi-Fi monitoring tools are more suitable due to
+their ability to provide continuous updates. However, keep in mind that airodump-ng is typically used for
+monitoring and security assessment, so it may require additional configuration and permissions to run.
 
 In summary, if you require real-time network scanning and updates, airodump-ng is the faster and more appropriate choice.
 1. iwlist (snapshot of the last scan)
