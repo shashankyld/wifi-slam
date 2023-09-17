@@ -231,4 +231,11 @@ Here is the data with relative Timestamps:
 
 #### PROBLEMS
 1. rospy returns same timestamps for all fingerprints. I do not know why? We have to correct that, when we find out why
+
+#### CHECK THESE REPOS
+1. https://github.com/RMiyagusuku/ros-wifi-localization/tree/master
+2. http://wiki.ros.org/rtabmap_ros/Tutorials/WifiSignalStrengthMappingUserDataUsage#How_to_Publish_User_Data_.28wifi_signal_pub.29
+3. https://github.com/aircrack-ng/aircrack-ng/discussions/2574#discussioncomment-7026621
+4. https://github.com/clearpathrobotics/wireless
+
    
