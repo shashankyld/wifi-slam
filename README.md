@@ -102,6 +102,9 @@ sudo airodump-ng wlx00c0cab04510 | grep iPhone
     ```
 38. Figure out if you can update airodump-ng csv at a faster rate
 39. Fix airodump-ng communication with ros
+```bash
+https://github.com/aircrack-ng/aircrack-ng/blob/master/src/airodump-ng/airodump-ng.c
+```
 40. Similarity between
 ```bash
 1. Two Poses
