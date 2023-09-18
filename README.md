@@ -271,3 +271,21 @@ Here is the data with relative Timestamps:
  00:F6:63:AD:7F:72  -56       13        0    0   1  195   WPA  CCMP   MGT  eduroam-cs                                                                        
  00:F6:63:81:CA:32  -63        4        0    0   6  195   WPA  CCMP   MGT  eduroam-cs
 ```
+
+2:
+```bash
+ 00:F6:63:AD:7F:72  -43       22        0    0   1  195   WPA  CCMP   MGT  eduroam-cs                                                                        
+ 00:F6:63:2C:34:F2  -61       20        0    0  11  195   WPA  CCMP   MGT  eduroam-cs                                                                        
+ 00:F6:63:9E:C9:C2  -62       17        0    0   6  195   WPA  CCMP   MGT  eduroam-cs
+
+ (not associated)   5C:61:99:44:5E:F7  -46    0 - 1      0        1         eduroam-cs                                                                        
+ (not associated)   6E:2F:6E:2F:27:24  -52    0 - 1      0        2         eduroam-cs                                                                        
+ (not associated)   6E:35:16:F5:FF:88  -62    0 - 5      0        1         eduroam-cs  
+```
+
+2 rotated:
+```bash
+ 00:F6:63:AD:7F:72  -39        7        0    0   1  195   WPA  CCMP   MGT  eduroam-cs                                                                        
+ 00:F6:63:2C:34:F2  -56        6        0    0  11  195   WPA  CCMP   MGT  eduroam-cs                                                                        
+ (not associated)   6E:35:16:F5:FF:88  -63    0 - 5      0        2         eduroam-cs
+```
