@@ -101,8 +101,12 @@ sudo airodump-ng wlx00c0cab04510 | grep iPhone
     sudo setcap cap_net_raw=eip ./your_program
     ```
 38. Figure out if you can update airodump-ng csv at a faster rate
-## Usage
-
+39. Fix airodump-ng communication with ros
+40. Similarity between
+```bash
+1. Two Poses
+2. Two Tracks
+```
 ### SSH Access
 
 To SSH into the system from your personal PC with a LAN cable connection, use the following command:
