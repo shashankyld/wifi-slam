@@ -96,7 +96,10 @@ nmcli device wifi list
 ```bash
 sudo airodump-ng wlx00c0cab04510 | grep iPhone
 ```
-36. Clear all airodump threads 
+36. Clear all airodump threads
+37. ```bash
+    sudo setcap cap_net_raw=eip ./your_program
+    ```
 ## Usage
 
 ### SSH Access
