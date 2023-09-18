@@ -100,6 +100,7 @@ sudo airodump-ng wlx00c0cab04510 | grep iPhone
 37. ```bash
     sudo setcap cap_net_raw=eip ./your_program
     ```
+38. Figure out if you can update airodump-ng csv at a faster rate
 ## Usage
 
 ### SSH Access
@@ -200,6 +201,14 @@ In summary, if you require real-time network scanning and updates, airodump-ng i
 3. pywifi (python - not updating -tested)
 4. nmcli (updates but very very slow - 1/10 hz)
 ```
+```bash
+## TO RUN WIFI PUBLISHER - airodump-ng - Updates real time
+# 1. Delete existing file and Launch airodump-ng
+find /home/nimbro_home/lidar_ws/src/wifi_lookup/src/ -type f -name 'airodump*.csv' -exec rm {} \; && sudo airodump-ng wlx00c0cab04510 --output-format csv -w /home/nimbro_home/lidar_ws/src/wifi_lookup/src/airodump | grep iPhone
+# 2. Launch wifi data pubisher that reads the csv
+rosrun wifi_lookup wifi_airodump_publisher.py
+```
+
 #### Workspaces used 
 1. lidar_ws contains ouster, camera, and wifi packages - located in the ~ directory of tiago.
 2. imu is on the ouster lidar and so ouster package pubishes imu data as well.
