@@ -250,4 +250,24 @@ Here is the data with relative Timestamps:
 3. https://github.com/aircrack-ng/aircrack-ng/discussions/2574#discussioncomment-7026621
 4. https://github.com/clearpathrobotics/wireless
 
-   
+
+## ROBOT LOCATION 
+-----------------1
+
+
+
+-----------------2
+
+1 :
+```bash
+ 00:F6:63:81:CA:32  -62       32        0    0   6  195   WPA  CCMP   MGT  eduroam-cs                                                                        
+ 00:F6:63:2C:34:F2  -48       54       16    0  11  195   WPA  CCMP   MGT  eduroam-cs                                                                        
+ 00:F6:63:AD:7F:72  -51       56        0    0   1  195   WPA  CCMP   MGT  eduroam-cs
+```
+1 rotated:
+```bash
+
+ 00:F6:63:2C:34:F2  -43       11        0    0  11  195   WPA  CCMP   MGT  eduroam-cs                                                                        
+ 00:F6:63:AD:7F:72  -56       13        0    0   1  195   WPA  CCMP   MGT  eduroam-cs                                                                        
+ 00:F6:63:81:CA:32  -63        4        0    0   6  195   WPA  CCMP   MGT  eduroam-cs
+```
