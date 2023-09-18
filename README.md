@@ -252,21 +252,23 @@ Here is the data with relative Timestamps:
 
 
 ## ROBOT LOCATION 
-||||||---------------1
+||||||--------------------1
+
 ||||||HR5
 
 
-------------------------2
+------------------------------2
 
 1 :
 ```bash
+ BSSID              PWR  Beacons    #Data, #/s  CH   MB   ENC CIPHER  AUTH ESSID
  00:F6:63:81:CA:32  -62       32        0    0   6  195   WPA  CCMP   MGT  eduroam-cs                                                                        
  00:F6:63:2C:34:F2  -48       54       16    0  11  195   WPA  CCMP   MGT  eduroam-cs                                                                        
  00:F6:63:AD:7F:72  -51       56        0    0   1  195   WPA  CCMP   MGT  eduroam-cs
 ```
 1 rotated:
 ```bash
-
+ BSSID              PWR  Beacons    #Data, #/s  CH   MB   ENC CIPHER  AUTH ESSID
  00:F6:63:2C:34:F2  -43       11        0    0  11  195   WPA  CCMP   MGT  eduroam-cs                                                                        
  00:F6:63:AD:7F:72  -56       13        0    0   1  195   WPA  CCMP   MGT  eduroam-cs                                                                        
  00:F6:63:81:CA:32  -63        4        0    0   6  195   WPA  CCMP   MGT  eduroam-cs
@@ -274,6 +276,7 @@ Here is the data with relative Timestamps:
 
 2:
 ```bash
+ BSSID              PWR  Beacons    #Data, #/s  CH   MB   ENC CIPHER  AUTH ESSID
  00:F6:63:AD:7F:72  -43       22        0    0   1  195   WPA  CCMP   MGT  eduroam-cs                                                                        
  00:F6:63:2C:34:F2  -61       20        0    0  11  195   WPA  CCMP   MGT  eduroam-cs                                                                        
  00:F6:63:9E:C9:C2  -62       17        0    0   6  195   WPA  CCMP   MGT  eduroam-cs
@@ -285,6 +288,7 @@ Here is the data with relative Timestamps:
 
 2 rotated:
 ```bash
+ BSSID              PWR  Beacons    #Data, #/s  CH   MB   ENC CIPHER  AUTH ESSID
  00:F6:63:AD:7F:72  -39        7        0    0   1  195   WPA  CCMP   MGT  eduroam-cs                                                                        
  00:F6:63:2C:34:F2  -56        6        0    0  11  195   WPA  CCMP   MGT  eduroam-cs                                                                        
  (not associated)   6E:35:16:F5:FF:88  -63    0 - 5      0        2         eduroam-cs
