@@ -88,19 +88,19 @@ https://www.hrz.uni-bonn.de/en/all-services/internet-network-access/wifi-eduroam
 https://www.annualreviews.org/doi/pdf/10.1146/annurev-control-061520-010504
 ```
 33. Try to think of a better way to initialize wifi based edge than track method proposed in the paper
-34. alternatives to iwlist
+34. [DONE] alternatives to iwlist
 ```bash
 nmcli device wifi list
 ```
-35. Write ROS Node for
+35. [DONE] Write ROS Node for
 ```bash
 sudo airodump-ng wlx00c0cab04510 | grep iPhone
 ```
-36. Clear all airodump threads
+36. [DONE] Clear all airodump threads
 37. ```bash
     sudo setcap cap_net_raw=eip ./your_program
     ```
-38. Figure out if you can update airodump-ng csv at a faster rate
+38. [DONE] Figure out if you can update airodump-ng csv at a faster rate
 39. Fix airodump-ng communication with ros
 ```bash
 https://github.com/aircrack-ng/aircrack-ng/blob/master/src/airodump-ng/airodump-ng.c
@@ -111,6 +111,9 @@ https://github.com/aircrack-ng/aircrack-ng/blob/master/src/airodump-ng/airodump-
 2. Two Tracks
 ```
 41. Check and solve if airodrop-ng ony pubishes 2.4 GHz wifis
+
+
+
 ### SSH Access
 
 To SSH into the system from your personal PC with a LAN cable connection, use the following command:
