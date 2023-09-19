@@ -110,6 +110,7 @@ https://github.com/aircrack-ng/aircrack-ng/blob/master/src/airodump-ng/airodump-
 1. Two Poses
 2. Two Tracks
 ```
+41. Check and solve if airodrop-ng ony pubishes 2.4 GHz wifis
 ### SSH Access
 
 To SSH into the system from your personal PC with a LAN cable connection, use the following command:
