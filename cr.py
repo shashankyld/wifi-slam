@@ -7,6 +7,10 @@ def csv2df(csv_path):
 
 
 def overlap_APs(fi,fj):
+    '''
+    fi, fj: pd.Series
+    overlap_array_mask: np.array
+    '''
     fi_mask = (fi > 0.0)
     fj_mask = (fj > 0.0)
     overlap_array_mask = np.array((fi_mask & fj_mask).to_list())
@@ -14,6 +18,10 @@ def overlap_APs(fi,fj):
 
 
 def detection_likelihood(fi, fj):
+    '''
+    fi, fj: pd.Series
+    dl: float
+    '''
     # Take numbers of APs for each FP
     Li = fi['num_APs']
     Lj = fj['num_APs']
@@ -26,6 +34,10 @@ def detection_likelihood(fi, fj):
 
 
 def signal_strength_likelihood(fi, fj):
+    '''
+    fi, fj: pd.Series
+    ssl: float
+    '''
     sigma = 0.3
     fi = fi.iloc[[0,1,2]]
     fj = fj.iloc[[0,1,2]]
