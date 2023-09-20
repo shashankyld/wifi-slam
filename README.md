@@ -223,6 +223,7 @@ rosrun wifi_lookup wifi_airodump_publisher.py
 #### Workspaces used 
 1. lidar_ws contains ouster, camera, and wifi packages - located in the ~ directory of tiago.
 2. imu is on the ouster lidar and so ouster package pubishes imu data as well.
+3. My ipv4 for nimbro_home lan: 192.168.3.157 || MASK: 255.255.255.0
 
 #### SOME IDEAS
 1. Channel State Information (CSI) from Wi-Fi signals to predict Angle of Arrival (AoA) 
