@@ -157,7 +157,7 @@ cd ~/lidar_ws/scripts && roslaunch run_sensors.launch
 To start rosbag_fancy recorder
 ```bash
 # YET TO DO
-cd ~/lidar_ws/src/rosbag_fancy/rosbag_fancy/sensor_data && rosbag_fancy record -o <name>.bag /ouster/points /ouster/imu /brio/image_raw/compressed /brio/camera_info /tf /tf_static /wifi_data
+cd ~/lidar_ws/src/rosbag_fancy/rosbag_fancy/sensor_data && rosbag_fancy record -o <name>.bag /ouster/points /ouster/imu /brio/image_raw/compressed /brio/camera_info /tf /tf_static /wifi_data_airodump
 
 ```
 #### To copy files between machines
