@@ -45,4 +45,6 @@ source ~/.bashrc
 ```bash
 # Give full path to the bin, incase required
 ~/local/bin/aircrack-ng airodump-ng
+# For Nimbro_home
+/home/nimbro_home/aircrack/local/bin/
 ```
