@@ -215,7 +215,7 @@ In summary, if you require real-time network scanning and updates, airodump-ng i
 ```bash
 ## TO RUN WIFI PUBLISHER - airodump-ng - Updates real time
 # 1. Delete existing file and Launch airodump-ng
-find /home/nimbro_home/lidar_ws/src/wifi_lookup/src/ -type f -name 'airodump*.csv' -exec rm {} \; && sudo airodump-ng wlx00c0cab04510 --output-format csv -w /home/nimbro_home/lidar_ws/src/wifi_lookup/src/airodump | grep iPhone
+find /home/nimbro_home/lidar_ws/src/wifi_lookup/src/ -type f -name 'airodump*.csv' -exec rm {} \; && sudo airodump-ng wlx00c0cab04510 --output-format csv -w /home/nimbro_home/lidar_ws/src/wifi_lookup/src/airodump --write-interval 1
 # 2. Launch wifi data pubisher that reads the csv
 rosrun wifi_lookup wifi_airodump_publisher.py
 ```
