@@ -113,7 +113,7 @@ https://github.com/aircrack-ng/aircrack-ng/blob/master/src/airodump-ng/airodump-
 41. Check and solve if airodrop-ng ony pubishes 2.4 GHz wifis
 42. Plot distance Vs simiarity plot
 43. Record data with --berlin flag - try to do the whole process again
-
+44. Rtabmap using nmcli for wifi data but even that is slow in updating and sometimes doesnt change as the robot moves.
 
 ### SSH Access
 
