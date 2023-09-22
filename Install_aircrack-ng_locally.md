@@ -48,3 +48,7 @@ source ~/.bashrc
 # For Nimbro_home
 /home/nimbro_home/aircrack/local/bin/
 ```
+```
+./airodump-ng wlx00c0cab04510
+```
+
