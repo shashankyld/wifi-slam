@@ -306,3 +306,11 @@ Here is the data with relative Timestamps:
  00:F6:63:2C:34:F2  -56        6        0    0  11  195   WPA  CCMP   MGT  eduroam-cs                                                                        
  (not associated)   6E:35:16:F5:FF:88  -63    0 - 5      0        2         eduroam-cs
 ```
+
+## MAC IDs within the same physical router as inferred from the signal strength plots (dBm vs time)
+```bash
+1. 00:F6:63:2C:34:F0 [NONE VALUES]
+2. 00:F6:63:9E:C9:C7, 00:F6:63:9E:C9:C5, 00:F6:63:9E:C9:C1, 00:F6:63:9E:C9:C4, 00:F6:63:9E:C9:C3,00:F6:63:9E:C9:C2
+3.
+
+```
