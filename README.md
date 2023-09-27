@@ -318,3 +318,36 @@ Here is the data with relative Timestamps:
 7. 00:F6:63:81:CA:30 [NONE VALUES]
 8. 00:f6:63:67:AD:F3, 00:f6:63:67:AD:F4, 00:f6:63:67:AD:F7, 00:f6:63:67:AD:F5, 00:f6:63:67:AD:F2, 00:f6:63:67:AD:F1
 ```
+
+
+Link(This is an implementation of the 3D version including scaling:)
+```https://github.com/MichaelGrupp/evo/blob/13d55881734309815492e097bc59dccefaf47f82/evo/core/geometry.py#L35```
+
+
+Code 2d cpp:
+```
+Sophus::SE2d align2d ( const Eigen::Matrix2Xd model, const Eigen::Matrix2Xd & data )
+{
+    const int n = model.cols();
+    if ( n < 10 ) return Sophus::SE2d();
+    
+    const Eigen::Vector2d mM = model.rowwise().mean();
+    const Eigen::Vector2d mD = data.rowwise().mean();
+
+    const Eigen::Matrix2Xd model_ = model.colwise() - mM;
+    const Eigen::Matrix2Xd data_ = data.colwise() - mD;
+    const Eigen::Matrix2d C = (model_ * data_.transpose()) / n;
+    
+    const Eigen::JacobiSVD<Eigen::Matrix2d> svd ( C, Eigen::ComputeFullU | Eigen::ComputeFullV );
+    const Eigen::Matrix2d U = svd.matrixU();
+    const Eigen::Matrix2d Vt = svd.matrixV().transpose();
+    
+    Eigen::Matrix2d S = Eigen::Matrix2d::Identity();
+    if ( U.determinant() * Vt.determinant() < 0 ) S(1,1) = -1; // not sure if this is also correct for 2D but probably
+    
+    Sophus::SE2d Rt;
+    Rt.so2() = Sophus::SO2d(U * S * Vt);
+    Rt.translation() = mM - Rt.so2() * mD;
+    return Rt;
+}
+```
