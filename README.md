@@ -114,7 +114,7 @@ https://github.com/aircrack-ng/aircrack-ng/blob/master/src/airodump-ng/airodump-
 42. Plot distance Vs simiarity plot
 43. Record data with --berlin flag - try to do the whole process again
 44. Rtabmap using nmcli for wifi data but even that is slow in updating and sometimes doesnt change as the robot moves.
-
+45. Clins run time - 6 times bag file time
 ### SSH Access
 
 To SSH into the system from your personal PC with a LAN cable connection, use the following command:
